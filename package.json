@@ -1,6 +1,6 @@
 {
   "name": "ozimnad-tabs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple JS Library for tabs",
   "main": "src/ozimnad-tabs.js",
   "repository": {

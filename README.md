@@ -10,24 +10,21 @@
 ## Как работать с библиотекой
 
 1. Скачайте последнюю версию библиотеки
-2. Подключите style.css и script.js из папки dist к странице
+2. Подключите `style.css` и `script.js` из папки `dist` к странице
 3. Поместите в ваш html-документ следующую разметку:
 ````html
 <div class="jsTabs">
     <!--btns-->
-    <button class="tabs__btn jsTabs__btn">Btn#1</button>
-    <button class="tabs__btn jsTabs__btn">Btn#2</button>
-    <button class="tabs__btn jsTabs__btn">Btn#3</button>
+    <button class="jsTabs__btn">Btn#1</button>
+    <button class="jsTabs__btn">Btn#2</button>
+    <button class="jsTabs__btn">Btn#3</button>
+    <!--btns END-->
+    
     <!--tabs-->
-    <div class="tabs__tab jsTabs__tab">
-        Tab#1
-    </div>
-    <div class="tabs__tab jsTabs__tab">
-        Tab#2
-    </div>
-    <div class="tabs__tab jsTabs__tab">
-        Tab#3
-    </div>
+    <div class="tabs__tab jsTabs__tab">Tab#1</div>
+    <div class="tabs__tab jsTabs__tab">Tab#2</div>
+    <div class="tabs__tab jsTabs__tab">Tab#3</div>
+    <!--btns END-->
 </div>
 ````
 
