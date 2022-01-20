@@ -1,2 +1,36 @@
-# ozimnad-tabs
-Repository fo tabs plugin
+# Ozimnad-tabs
+Простая и легкая библиотека js-табов.
+
+## Особенности
++ __Никаких зависимостей__.  Библиотека написана на чистом JavaScript, для работы не требуются иные библиотеки.
++ __Нет жесткой структуры.__ Нет жесткой привязки в структуре.
++ __Простота и функциональность__. Вы можете легко и быстро подключить и использовать библиотеку.
++ __Настройка с помощью CSS__. Вы можете легко менять внешний вид, расположение с помощью CSS.
+
+## Как работать с библиотекой
+
+1. Скачайте последнюю версию библиотеки
+2. Подключите style.css и script.js из папки dist к странице
+3. Поместите в ваш html-документ следующую разметку:
+````html
+    <div class="jsTabs">
+    <!--btns-->
+    <button class="tabs__btn jsTabs__btn">Btn#1</button>
+    <button class="tabs__btn jsTabs__btn">Btn#2</button>
+    <button class="tabs__btn jsTabs__btn">Btn#3</button>
+    <!--tabs-->
+    <div class="tabs__tab jsTabs__tab">
+        Tab#1
+    </div>
+    <div class="tabs__tab jsTabs__tab">
+        Tab#2
+    </div>
+    <div class="tabs__tab jsTabs__tab">
+        Tab#3
+    </div>
+</div>
+````
+
+### Важно
+
+Количество `кнопок` должно быть равным количеству `табов`.
