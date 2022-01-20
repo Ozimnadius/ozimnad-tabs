@@ -13,7 +13,7 @@
 2. Подключите style.css и script.js из папки dist к странице
 3. Поместите в ваш html-документ следующую разметку:
 ````html
-    <div class="jsTabs">
+<div class="jsTabs">
     <!--btns-->
     <button class="tabs__btn jsTabs__btn">Btn#1</button>
     <button class="tabs__btn jsTabs__btn">Btn#2</button>
