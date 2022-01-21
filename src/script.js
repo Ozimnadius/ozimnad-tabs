@@ -1,5 +1,5 @@
 class OzimnadTabs {
-    constructor(options) {
+    constructor(options={}) {
 
         const defaultOptions = {
             selector: '[data-tabs="tabs"]',
@@ -7,6 +7,9 @@ class OzimnadTabs {
             tab: '[data-tabs="tab"]',
             activeIndex: 0
         };
+
+        // Object.assign(this, defaultOptions, options);
+        // console.log(this);
 
         this.options = Object.assign(defaultOptions,options);
         this.tabs = document.querySelector(this.options.selector);
