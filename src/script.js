@@ -1,16 +1,17 @@
-
-const defaultOptions = {
-    selector: '[data-tabs="tabs"]',
-    btn: '[data-tabs="btn"]',
-    tab: '[data-tabs="tab"]',
-    activeIndex: 0
-};
-
 class OzimnadTabs {
     constructor(options = defaultOptions) {
 
-        this.options = options;
+        const defaultOptions = {
+            selector: '[data-tabs="tabs"]',
+            btn: '[data-tabs="btn"]',
+            tab: '[data-tabs="tab"]',
+            activeIndex: 0
+        };
+
+        this.options = Object.assign(defaultOptions,options);
         this.tabs = document.querySelector(this.options.selector);
+
+        console.log(this.options);
 
         if (!this.tabs) {
             console.log(`Селектор ${this.options.selector} не найден!`);
@@ -27,11 +28,11 @@ class OzimnadTabs {
 
 
         this.activeIndex = this.options.activeIndex;
-        this.init();
+        this.#init();
 
     }
 
-    init() {
+    #init() {
         this.activate();
         this.btnsList.forEach((i) => i.addEventListener("click", this.click));
     }
