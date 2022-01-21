@@ -1,36 +1,33 @@
 class OzimnadTabs {
     constructor(options={}) {
 
+        //TODO нужно сделать multiple tabs
+
         const defaultOptions = {
             selector: '[data-tabs="tabs"]',
-            btn: '[data-tabs="btn"]',
-            tab: '[data-tabs="tab"]',
+            btnSelector: '[data-tabs="btn"]',
+            tabSelector: '[data-tabs="tab"]',
             activeIndex: 0
         };
 
-        // Object.assign(this, defaultOptions, options);
-        // console.log(this);
+        //Инициализация настроек
+        Object.assign(this, defaultOptions, options);
 
-        this.options = Object.assign(defaultOptions,options);
-        this.tabs = document.querySelector(this.options.selector);
-
-        console.log(this.options);
+        this.tabs = document.querySelector(this.selector);
 
         if (!this.tabs) {
             console.log(`Селектор ${this.options.selector} не найден!`);
             return;
         }
 
-        this.btnsList = this.tabs.querySelectorAll(this.options.btn);
-        this.tabsList = this.tabs.querySelectorAll(this.options.tab);
+        this.btnsList = this.tabs.querySelectorAll(this.btnSelector);
+        this.tabsList = this.tabs.querySelectorAll(this.tabSelector);
 
         if (this.btnsList.length !== this.tabsList.length){
             console.log("Количество кнопок и табов должно быть равным");
             return;
         }
 
-
-        this.activeIndex = this.options.activeIndex;
         this.#init();
 
     }

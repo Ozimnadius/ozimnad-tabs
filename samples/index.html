@@ -20,7 +20,6 @@
             width: 100%;
             max-width: 1220px;
             margin: 0 auto;
-            display: flex;
             padding: 100px 0;
         }
 
@@ -70,12 +69,63 @@
             </div>
         </div>
     </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="tabs2" data-tabs="tabs">
+        <div class="tabs__btns">
+            <button class="tabs__btn jsTabs__btn" data-tabs="btn">Tab#1</button>
+            <button class="tabs__btn jsTabs__btn" data-tabs="btn">Tab#2</button>
+            <button class="tabs__btn jsTabs__btn" data-tabs="btn">Tab#3</button>
+        </div>
+        <div class="tabs__tabs">
+            <div class="tabs__tab jsTabs__tab" data-tabs="tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestiae placeat quaerat earum ea,
+                explicabo laboriosam, aspernatur blanditiis debitis magnam illo quos doloremque exercitationem ab quas
+                sapiente ut quo corporis cupiditate fugiat, at sed eveniet repudiandae! Quibusdam alias labore totam
+                incidunt odit, obcaecati fuga cumque laboriosam ab sit quidem repellendus?
+            </div>
+            <div class="tabs__tab jsTabs__tab" data-tabs="tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nemo. Consectetur quasi hic ut soluta
+                error
+                perferendis, officia laudantium ad at id amet odit deleniti temporibus aliquid veniam animi! Similique
+                atque
+                eaque placeat modi, consequatur dicta labore amet qui quibusdam suscipit ad tenetur tempore maxime unde.
+                Laudantium odio officiis ex rem reprehenderit dolor at nemo, perspiciatis voluptatibus libero atque in.
+            </div>
+            <div class="tabs__tab jsTabs__tab" data-tabs="tab">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aliquam placeat vel doloribus odio
+                sed
+                excepturi quaerat obcaecati dolores amet impedit, nulla inventore iusto, illo distinctio quis incidunt
+                atque
+                odit tempora officiis quos eum suscipit a cum. Vitae velit ullam, culpa atque eligendi minus magni nobis
+                commodi adipisci suscipit dolore nesciunt, eveniet ipsa illum perferendis expedita! Nulla obcaecati
+                temporibus aspernatur esse vitae perferendis et eos, fuga dicta deserunt sequi quibusdam voluptatum
+                repellat
+                quas incidunt labore facilis assumenda maiores harum nisi! Consequuntur, rem dolores at vitae tempora
+                enim
+                accusantium harum, eligendi quos voluptatem eius minima a cupiditate hic ea illo iusto?
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     window.addEventListener("load", function () {
+
         new OzimnadTabs({
+            selector: '.jsTabs',
             activeIndex: 1
         });
+
+        new OzimnadTabs({
+            selector: '.tabs2',
+            activeIndex: 2
+        });
+
     });
 </script>
 <script src="../dist/script.js"></script>
