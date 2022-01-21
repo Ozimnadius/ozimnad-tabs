@@ -1,5 +1,5 @@
 class OzimnadTabs {
-    constructor(options = defaultOptions) {
+    constructor(options) {
 
         const defaultOptions = {
             selector: '[data-tabs="tabs"]',
