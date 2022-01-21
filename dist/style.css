@@ -1,1 +1,1 @@
-.jsTabs__tab{display:none}.jsTabs__tab.active{display:block}
+[data-tabs=tabs] [data-tabs=tab]{display:none}[data-tabs=tabs] [data-tabs=tab].active{display:block}

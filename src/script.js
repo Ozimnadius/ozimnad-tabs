@@ -1,14 +1,34 @@
-class Tabs {
-    constructor() {
-        this.tabs = document.querySelector(".jsTabs");
-        if (this.tabs) {
-            this.btnsList = this.tabs.querySelectorAll(".jsTabs__btn");
-            this.tabsList = this.tabs.querySelectorAll(".jsTabs__tab");
-            this.activeIndex = 0;
-            this.init();
-        } else {
-            console.log("Табы не найдены!");
+
+const defaultOptions = {
+    selector: '[data-tabs="tabs"]',
+    btn: '[data-tabs="btn"]',
+    tab: '[data-tabs="tab"]',
+    activeIndex: 0
+};
+
+class OzimnadTabs {
+    constructor(options = defaultOptions) {
+
+        this.options = options;
+        this.tabs = document.querySelector(this.options.selector);
+
+        if (!this.tabs) {
+            console.log(`Селектор ${this.options.selector} не найден!`);
+            return;
         }
+
+        this.btnsList = this.tabs.querySelectorAll(this.options.btn);
+        this.tabsList = this.tabs.querySelectorAll(this.options.tab);
+
+        if (this.btnsList.length !== this.tabsList.length){
+            console.log("Количество кнопок и табов должно быть равным");
+            return;
+        }
+
+
+        this.activeIndex = this.options.activeIndex;
+        this.init();
+
     }
 
     init() {

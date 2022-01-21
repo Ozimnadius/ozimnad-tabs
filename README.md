@@ -13,21 +13,21 @@
 2. Подключите `style.css` и `script.js` из папки `dist` к странице
 3. Поместите в ваш html-документ следующую разметку:
 ````html
-<div class="jsTabs">
+<div data-tabs="tabs">
     <!--btns-->
-    <button class="jsTabs__btn">Btn#1</button>
-    <button class="jsTabs__btn">Btn#2</button>
-    <button class="jsTabs__btn">Btn#3</button>
+    <button data-tabs="btn">Btn#1</button>
+    <button data-tabs="btn">Btn#2</button>
+    <button data-tabs="btn">Btn#3</button>
     <!--btns END-->
     
     <!--tabs-->
-    <div class="tabs__tab jsTabs__tab">Tab#1</div>
-    <div class="tabs__tab jsTabs__tab">Tab#2</div>
-    <div class="tabs__tab jsTabs__tab">Tab#3</div>
+    <div data-tabs="tab">Tab#1</div>
+    <div data-tabs="tab">Tab#2</div>
+    <div data-tabs="tab">Tab#3</div>
     <!--btns END-->
 </div>
 ````
 
 ### Важно
-
+Дата атрибуты обязательны и их нельзя менять.
 Количество `кнопок` должно быть равным количеству `табов`.

@@ -34,20 +34,20 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="jsTabs tabs">
+    <div class="jsTabs tabs" data-tabs="tabs">
         <div class="tabs__btns">
-            <button class="tabs__btn jsTabs__btn">Tab#1</button>
-            <button class="tabs__btn jsTabs__btn">Tab#2</button>
-            <button class="tabs__btn jsTabs__btn">Tab#3</button>
+            <button class="tabs__btn jsTabs__btn" data-tabs="btn">Tab#1</button>
+            <button class="tabs__btn jsTabs__btn" data-tabs="btn">Tab#2</button>
+            <button class="tabs__btn jsTabs__btn" data-tabs="btn">Tab#3</button>
         </div>
         <div class="tabs__tabs">
-            <div class="tabs__tab jsTabs__tab">
+            <div class="tabs__tab jsTabs__tab" data-tabs="tab">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestiae placeat quaerat earum ea,
                 explicabo laboriosam, aspernatur blanditiis debitis magnam illo quos doloremque exercitationem ab quas
                 sapiente ut quo corporis cupiditate fugiat, at sed eveniet repudiandae! Quibusdam alias labore totam
                 incidunt odit, obcaecati fuga cumque laboriosam ab sit quidem repellendus?
             </div>
-            <div class="tabs__tab jsTabs__tab">
+            <div class="tabs__tab jsTabs__tab" data-tabs="tab">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nemo. Consectetur quasi hic ut soluta
                 error
                 perferendis, officia laudantium ad at id amet odit deleniti temporibus aliquid veniam animi! Similique
@@ -55,7 +55,7 @@
                 eaque placeat modi, consequatur dicta labore amet qui quibusdam suscipit ad tenetur tempore maxime unde.
                 Laudantium odio officiis ex rem reprehenderit dolor at nemo, perspiciatis voluptatibus libero atque in.
             </div>
-            <div class="tabs__tab jsTabs__tab">
+            <div class="tabs__tab jsTabs__tab" data-tabs="tab">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aliquam placeat vel doloribus odio
                 sed
                 excepturi quaerat obcaecati dolores amet impedit, nulla inventore iusto, illo distinctio quis incidunt
@@ -73,7 +73,7 @@
 </div>
 <script>
     window.addEventListener("load", function () {
-        new Tabs();
+        new OzimnadTabs();
     });
 </script>
 <script src="../dist/script.js"></script>

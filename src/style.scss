@@ -1,5 +1,5 @@
-.jsTabs {
-  &__tab {
+[data-tabs="tabs"] {
+  [data-tabs="tab"] {
     display: none;
 
     &.active {
