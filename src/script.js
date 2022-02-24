@@ -16,7 +16,7 @@ class OzimnadTabs {
         this.tabs = document.querySelector(this.selector);
 
         if (!this.tabs) {
-            console.log(`Селектор ${this.options.selector} не найден!`);
+            console.error(`Селектор ${this.selector} не найден!`);
             return;
         }
 
@@ -24,7 +24,7 @@ class OzimnadTabs {
         this.tabsList = this.tabs.querySelectorAll(this.tabSelector);
 
         if (this.btnsList.length !== this.tabsList.length){
-            console.log("Количество кнопок и табов должно быть равным");
+            console.error("Количество кнопок и табов должно быть равным");
             return;
         }
 
