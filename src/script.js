@@ -28,11 +28,11 @@ class OzimnadTabs {
             return;
         }
 
-        this.#init();
+        this.init();
 
     }
 
-    #init() {
+    init() {
         this.activate();
         this.btnsList.forEach((i) => i.addEventListener("click", this.click));
     }
