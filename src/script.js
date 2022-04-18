@@ -14,7 +14,12 @@ class OzimnadTabs {
         //Инициализация настроек
         Object.assign(this, defaultOptions, options);
 
-        this.tabs = document.querySelector(this.selector);
+        if (typeof this.selector ==='string'){
+            this.tabs = document.querySelector(this.selector);
+        } else{
+            this.tabs = this.selector;
+        }
+
 
         if (!this.tabs) {
             console.error(`Селектор ${this.selector} не найден!`);
@@ -70,7 +75,6 @@ class OzimnadTabs {
     get tabsHeight(){
         let maxHeight = 0;
         Array.from(this.tabsList).forEach((i)=>{
-            debugger;
             if (i.offsetHeight>maxHeight){
                 maxHeight =i.offsetHeight;
             }
