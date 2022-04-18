@@ -83,7 +83,6 @@ class OzimnadTabs {
     }
 
     setHeight(){
-        console.log(this.tabs);
         this.tabs.style.height = `${this.btnHeight+this.tabsHeight}px`;
     }
 }
