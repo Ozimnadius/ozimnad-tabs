@@ -69,7 +69,7 @@ class OzimnadTabs {
     }
 
     get btnHeight(){
-        return this.btnsList[0].offsetHeight;
+        return this.tabs.offsetHeight;
     }
 
     get tabsHeight(){
