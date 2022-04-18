@@ -7,6 +7,7 @@ class OzimnadTabs {
             selector: '[data-tabs="tabs"]',
             btnSelector: '[data-tabs="btn"]',
             tabSelector: '[data-tabs="tab"]',
+            type: 'default',
             activeIndex: 0
         };
 
@@ -33,8 +34,17 @@ class OzimnadTabs {
     }
 
     init() {
+        if (this.type==='absolute'){
+            this.tabs.classList.add('absolute');
+            this.setHeight();
+        }
+
+
+
         this.activate();
         this.btnsList.forEach((i) => i.addEventListener("click", this.click));
+
+
     }
 
     click = (e) => {
@@ -51,5 +61,25 @@ class OzimnadTabs {
     activate() {
         this.btnsList[this.activeIndex].classList.add("active");
         this.tabsList[this.activeIndex].classList.add("active");
+    }
+
+    get btnHeight(){
+        return this.btnsList[0].offsetHeight;
+    }
+
+    get tabsHeight(){
+        let maxHeight = 0;
+        Array.from(this.tabsList).forEach((i)=>{
+            debugger;
+            if (i.offsetHeight>maxHeight){
+                maxHeight =i.offsetHeight;
+            }
+        });
+        return maxHeight;
+    }
+
+    setHeight(){
+        console.log(this.tabs);
+        this.tabs.style.height = `${this.btnHeight+this.tabsHeight}px`;
     }
 }
