@@ -42,7 +42,6 @@ class OzimnadTabs {
         if (this.type==='absolute'){
             this.tabs.classList.add('absolute');
             this.setHeight();
-            this.setTabsPosition();
         }
 
         this.activate();
