@@ -42,6 +42,8 @@ class OzimnadTabs {
         if (this.type==='absolute'){
             this.tabs.classList.add('absolute');
             this.setHeight();
+        } else{
+            this.tabs.classList.remove('absolute');
         }
 
         this.activate();
